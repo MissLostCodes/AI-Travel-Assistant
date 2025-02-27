@@ -48,7 +48,7 @@ prompt_template = ChatPromptTemplate(
 )
 
 # ✅ Set up Gemini API Key
-gemini_api_key = "AIzaSyDT_I6RfdL2Chd6Y4ceQa-b2kPLpjHvbWM" 
+gemini_api_key = "gemini api key here " 
 
 chat_model = ChatGoogleGenerativeAI(google_api_key=gemini_api_key, model="gemini-2.0-flash-exp")
 chain = prompt_template | chat_model | output_parser
